@@ -10,7 +10,8 @@ pipeline {
     stage('Run Script') {
       steps {
                 script {
-                        withPythonEnv('python3'){
+                        //withPythonEnv('python3'){
+                        withPythonEnv('Python 2.7.17'){
                       sh 'pip install psycopg2'
                       sh './job.sh'
 
